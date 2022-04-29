@@ -1,56 +1,23 @@
-# CodeIgniter 4 Framework
+# Keterangan Repo
+Repo ini hanya percobaan untuk menggunakan Fitur Authentication (Register & Login) di Codeigniter 4
 
-## What is CodeIgniter?
+## CodeIgniter 4 Framework
+CodeIgeniter yang saya ketahui adalah framework MVC(Model-View-Controller) php yang fleksibel yang bisa di rubah menurut keinginan developer yang menggunakan framework tersebut dan juga framework ini lebih cepat daripada framework lain. 
+Framework Codeigniter lebih ringan dan biasanya lenbih kecil daripada framework lain, biasanya file codeigniter berkisar 3-4 mb.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](http://codeigniter.com).
-
-This repository holds the distributable version of the framework,
-including the user guide. It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
-
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
-
-The user guide corresponding to this version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+CodeIgniter 4 sekarang menggunakan PHP 7.3 keatas dan tidak menggunakan PHP versi kebawah lagi.
 
 
-## Important Change with index.php
-
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
-
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 7.3 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
-- xml (enabled by default - don't turn it off)
+## step-step yang saya lakukan untuk membuat repo ini
+1. Instal codeigniter4
+2. Lalu merobah file env menjadi .env
+3. Membuat koneksi database di codeigniter yang sudah terdapat di file .env
+4. Donwload dan mengistal myth-auth pakage <a href="https://github.com/lonnieezell/myth-auth">file Myth-auth</a>
+5. Update file Autoload.php
+6. Update file Filter.php
+7. Update file Email.php
+8. Update file Validation.php
+9. Update file Config.php/Auth.php
+10. Migrate database
+11. Update Routes.php
+12. Update Controler.php
